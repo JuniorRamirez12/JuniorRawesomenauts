@@ -6,10 +6,13 @@ game.resources = [
 	 */
         {name: "background-tiles", type:"image", src: "data/img/background-tiles.png"},
         {name: "meta-tiles", type:"image", src: "data/img/meta-tiles.png"},
-        {name: "player", type:"image", src: "data/img/wizard.png"},
+        {name: "player", type:"image", src: "data/img/orcSpear.png"},
         {name: "tower", type:"image", src: "data/img/tower_round.svg.png"},
         {name: "creep1", type:"image", src: "data/img/brainmonster.png"},
-        
+         {name: "title-screen", type:"image", src: "data/img/title.png"},
+        {name: "exp-screen", type:"image", src: "data/img/title.png"},
+        {name: "load-screen", type:"image", src: "data/img/loadpic.png"},
+        {name: "gold-screen", type:"image", src: "data/img/spend.png"},
         
         
 	/* Atlases 
@@ -22,6 +25,7 @@ game.resources = [
 	 * {name: "example01", type: "tmx", src: "data/map/example01.tmx"},
 	 * {name: "example01", type: "tmx", src: "data/map/example01.json"},
  	 */
+        
          {name: "level01", type: "tmx", src: "data/map/test.tmx"},
 
 	/* Background music. 
