@@ -36,7 +36,10 @@
                 <script type="text/javascript" src="js/gamemanagers/GameTimerManager.js"></script>
                 <script type="text/javascript" src="js/gamemanagers/HeroDeathManager.js"></script>
                 <script type="text/javascript" src="js/gamemanagers/SpendGold.js"></script>
-
+                <script type="text/javascript" src="js/gamemanagers/loadProfile.js"></script>
+                <script type="text/javascript" src="js/gamemanagers/newProfile.js"></script>
+                
+                
 		<script type="text/javascript" src="js/screens/title.js"></script>
 		<script type="text/javascript" src="js/screens/play.js"></script>
                 <script type="text/javascript" src="js/screens/spendExp.js"></script>
