@@ -23,9 +23,9 @@ game.SpendExp = me.ScreenObject.extend({
                        this.font.draw(renderer.getContext(), "PRESS F1-F4 TO BUY, F5 TO SKIP", this.pos.x, this.pos.y);
                        this.font.draw(renderer.getContext(), "CURRENT EXP: " + game.data.exp.toString(), this.pos.x + 100, this.pos.y + 50);
                        this.font.draw(renderer.getContext(), "F1: INCREASE GOLD PRODUCTION! CURRENT LEVEL: " + game.data.exp1.toString() + " COST: " + ((game.data.exp1) = 10), this.pos.x, this.pos.y + 100);
-                       this.font.draw(renderer.getContext(), "F2: ADD STARTING GOLD!", this.pos.x, this.pos.y + 100);
-                       this.font.draw(renderer.getContext(), "F3: INCREASE ATTACK DAMAGE!", this.pos.x, this.pos.y + 100);
-                       this.font.draw(renderer.getContext(), "F4: INCREASE STARTING HEALTH!", this.pos.x, this.pos.y + 100);
+                       this.font.draw(renderer.getContext(), "F2: ADD STARTING GOLD!", this.pos.x, this.pos.y + 150);
+                       this.font.draw(renderer.getContext(), "F3: INCREASE ATTACK DAMAGE!", this.pos.x, this.pos.y + 200);
+                       this.font.draw(renderer.getContext(), "F4: INCREASE STARTING HEALTH!", this.pos.x, this.pos.y + 250);
                    }
                
                })));
@@ -62,6 +62,6 @@ game.SpendExp = me.ScreenObject.extend({
                 me.input.unbindKey(me.input.KEY.F3, "F3");
                 me.input.unbindKey(me.input.KEY.F4, "F4");
                 me.input.unbindKey(me.input.KEY.F5, "F5");
-                me.event.usubscribe(this.handler);
+                me.event.unsubscribe(this.handler);
         }
 });
