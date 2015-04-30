@@ -1,3 +1,4 @@
+//creates the enemy base
 game.EnemyBaseEntity = me.Entity.extend({
     init: function(x, y, settings){
         this._super(me.Entity, 'init', [x, y, {
@@ -37,6 +38,8 @@ game.EnemyBaseEntity = me.Entity.extend({
     onCollision: function(){
         
     },
+    
+    //makes the enemy base lose health
     
     loseHealth: function(){
        this.health--; 

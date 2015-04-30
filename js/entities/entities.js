@@ -70,6 +70,8 @@ game.PlayerEntity = me.Entity.extend({
         return;
     },
    
+   //lets me move all directions
+   
     checkKeyPressesAndMove: function() {
         if (me.input.isKeyPressed("right")) {
             this.moveRight();
@@ -125,6 +127,8 @@ game.PlayerEntity = me.Entity.extend({
         } 
         },
        
+       //makes youur character lose health 
+       
     loseHealth: function(damage) {
         this.health = this.health - damage;
     },
@@ -156,6 +160,8 @@ game.PlayerEntity = me.Entity.extend({
                 response.b.loseHealth(game.data.playerAttack);
             }
     },
+   
+   //help youu collide with the creeps
    
     collideWithEnemyCreep: function(response){
          var xdif = this.pos.x - response.b.pos.x;

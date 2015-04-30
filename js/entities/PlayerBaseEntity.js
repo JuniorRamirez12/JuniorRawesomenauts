@@ -1,3 +1,5 @@
+//code that helps me make the home base
+
 game.PlayerBaseEntity = me.Entity.extend({
     init: function(x, y, settings){
         this._super(me.Entity, 'init', [x, y, {
@@ -33,6 +35,7 @@ game.PlayerBaseEntity = me.Entity.extend({
         return true;
     },
     
+    //makes your home base lose health
     loseHealth: function(damage){
         this.health = this.health = damage;
     },
